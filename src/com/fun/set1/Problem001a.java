@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
  * <ul>
  * <li>music scores is a String of pitches (1~7).
  * <li>assume String is valid.
+ * <li>there are divider '|' in String, ignore it.
  * </ul>
  *
  */
@@ -55,7 +56,10 @@ public class Problem001a extends Problem001 {
   
   @Test
   public void testKatyPerryRoarAdvanced() {
-    String roar = "";
-    assertEquals(solution(roar), 0);
+    String roar = "44444444|444455|74+4+4+2+2+1+1+1+77"
+        + "74+4+4+2+2+1+1+1+77|771+2+2+4+2+|771+2+2+4+2+"
+        + "7771+2+2+4+2+2+7|4+4+4+2+4+5+4+|5+4+4+2+2+4+5+4+7"
+        + "4+4+4+2+4+5+4+|4+4+4+2+2+1+777|4+4+4+2+4+5+4+";
+    assertEquals(solution(roar), 89);
   }
 }

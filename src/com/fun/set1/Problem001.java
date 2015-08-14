@@ -52,7 +52,10 @@ public class Problem001 {
   
   @Test
   public void testKatyPerryRoarBasic() {
-    String roar = "";
-    assertEquals(solution(roar), 0);
+    String roar = "4444444444445574442211177"
+        + "7444221117777122427712242"
+        + "77712242274442454544224547"
+        + "44424544442217774442454";
+    assertEquals(solution(roar), 122);
   }
 }
