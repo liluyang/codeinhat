@@ -16,38 +16,39 @@ import org.testng.annotations.Test;
  *
  */
 public class Problem001 {
-  public int solution(String scores) {
+  public int solve(String scores) {
+    // TODO: solve problem here.
     return 0;
   }
   
   @Test
   public void test1() {
-    assertEquals(solution("12345"), 4);
+    assertEquals(solve("12345"), 4);
   }
   
   @Test
   public void test2() {
-    assertEquals(solution("13542"), 7);
+    assertEquals(solve("13542"), 7);
   }
   
   @Test
   public void test3() {
-    assertEquals(solution("1"), 0);
+    assertEquals(solve("1"), 0);
   }
   
   @Test
   public void test4() {
-    assertEquals(solution("11"), 0);
+    assertEquals(solve("11"), 0);
   }
   
   @Test
   public void test5() {
-    assertEquals(solution("11223344556677"), 6);
+    assertEquals(solve("11223344556677"), 6);
   }
   
   @Test
   public void test6() {
-    assertEquals(solution(""), 0);
+    assertEquals(solve(""), 0);
   }
   
   @Test
@@ -56,6 +57,6 @@ public class Problem001 {
         + "7444221117777122427712242"
         + "77712242274442454544224547"
         + "44424544442217774442454";
-    assertEquals(solution(roar), 122);
+    assertEquals(solve(roar), 122);
   }
 }

@@ -17,41 +17,47 @@ import org.testng.annotations.Test;
  *
  */
 public class Problem001a extends Problem001 {
+  @Override
+  public int solve(String scores) {
+    // TODO: solve problem here.
+    return 0;
+  }
+  
   @Test
   public void testA() {
     // 8 + 6 + 6 + 8 = 28
-    assertEquals(solution("12+34-5"), 28);
+    assertEquals(solve("12+34-5"), 28);
   }
   
   @Test
   public void testB() {
     // 9 + 4 + 8 + 5 = 27
-    assertEquals(solution("13+54-2"), 27);
+    assertEquals(solve("13+54-2"), 27);
   }
   
   @Test
   public void testC() {
-    assertEquals(solution("7-1"), 1);
+    assertEquals(solve("7-1"), 1);
   }
   
   @Test
   public void testD() {
-    assertEquals(solution("7+1"), 13);
+    assertEquals(solve("7+1"), 13);
   }
   
   @Test
   public void testE() {
-    assertEquals(solution("1-2-3-4-5-6-7-12345671+2+3+4+5+6+7+"), 20);
+    assertEquals(solve("1-2-3-4-5-6-7-12345671+2+3+4+5+6+7+"), 20);
   }
   
   @Test
   public void testF() {
-    assertEquals(solution("1+"), 0);
+    assertEquals(solve("1+"), 0);
   }
   
   @Test
   public void testG() {
-    assertEquals(solution("7-"), 0);
+    assertEquals(solve("7-"), 0);
   }
   
   @Test
@@ -60,6 +66,6 @@ public class Problem001a extends Problem001 {
         + "74+4+4+2+2+1+1+1+77|771+2+2+4+2+|771+2+2+4+2+"
         + "7771+2+2+4+2+2+7|4+4+4+2+4+5+4+|5+4+4+2+2+4+5+4+7"
         + "4+4+4+2+4+5+4+|4+4+4+2+2+1+777|4+4+4+2+4+5+4+";
-    assertEquals(solution(roar), 89);
+    assertEquals(solve(roar), 89);
   }
 }
