@@ -8,9 +8,12 @@ import org.testng.annotations.Test;
  * A queue a soldiers are crossing the bridge, at speed of 1 meter per second.
  * Will the bridge collapse?
  * 
- * Input weight[] - all soldier's weight bridgeLength - bridge's length maxLoad
- * - bridge's max load Output the second when bridge will collapse; -1 if bridge
- * will not collapse.
+ * Input 
+ *   weight[] - all soldier's weight
+ *   bridgeLength - bridge's length 
+ *   maxLoad - bridge's max load
+ * Output
+ *   the second when bridge will collapse; -1 if bridge will not collapse.
  */
 public class Problem002 {
   public int solve(int[] weight, int bridgeLength, int maxLoad) {
