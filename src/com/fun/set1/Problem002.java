@@ -5,8 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
 /**
- * A queue a soldiers are crossing the bridge, at speed of 1 meter per second.
- * Will the bridge collapse?
+ * A queue of soldiers are crossing the bridge, at speed of 1 meter per second.
+ * Given the bridge's max load, will the bridge collapse? if so, when?
  * 
  * Input 
  *   weight[] - all soldier's weight
