@@ -2,9 +2,6 @@ package com.fun.set1;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-
 import org.testng.annotations.Test;
 
 /**

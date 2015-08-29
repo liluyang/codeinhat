@@ -18,6 +18,8 @@ public class Solution002a extends Problem002a {
         onBridge -= queue1.remove();
         onBridge -= queue2.remove();
       }
+      queue1.add(weight[0][i]);
+      queue2.add(weight[1][i]);
       onBridge += weight[0][i];
       onBridge += weight[1][i];
       if (onBridge > maxLoad) {
@@ -46,6 +48,8 @@ public class Solution002a extends Problem002a {
         onBridge -= queue1.remove();
         onBridge -= queue2.remove();
       }
+      queue1.add(weight[0][i]);
+      queue2.add(weight[1][i]);
       onBridge += weight[0][i];
       onBridge += weight[1][i];
       max = Math.max(max, onBridge);
