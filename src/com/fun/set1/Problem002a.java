@@ -2,6 +2,9 @@ package com.fun.set1;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 import org.testng.annotations.Test;
 
 /**
@@ -37,13 +40,13 @@ public class Problem002a {
   @Test
   public void test3() {
     int[][] weight = new int[][] { { 120, 130, 140, 150, 160 }, { 120, 140, 160, 130, 150 } };
-    assertEquals(solve(weight, 3, 1400), -1);
+    assertEquals(solve(weight, 3, 890), -1);
   }
 
   @Test
   public void test4() {
     int[][] weight = new int[][] { { 120, 130, 140, 150, 160 }, { 120, 140, 160, 130, 150 } };
-    assertEquals(solve(weight, 3, 1300), 5);
+    assertEquals(solve(weight, 3, 880), 5);
   }
 
   @Test
@@ -61,7 +64,7 @@ public class Problem002a {
             191, 131, 172, 164, 135, 198, 174, 178, 135, 190, 173, 182, 195, 156, 161, 126, 166,
             175, 139, 180, 191, 175, 166, 191, 137, 183, 191, 185, 169, 189, 176, 168, 176, 159,
             183, 188, 144, 155, 150, 164, 140, 170, 180, 141, 184, 171, 161, 167 } };
-    assertEquals(solve(weight, 20, 31944), -1);
+    assertEquals(solve(weight, 20, 6804), -1);
   }
 
   @Test
@@ -79,6 +82,6 @@ public class Problem002a {
             135, 197, 123, 180, 170, 130, 140, 177, 137, 149, 195, 163, 169, 142, 195, 181, 178,
             161, 134, 121, 148, 145, 146, 126, 161, 186, 151, 142, 152, 139, 165, 167, 146, 127,
             139, 148, 181, 151, 154, 199, 182, 149, 120, 149, 171, 167, 176, 142 } };
-    assertEquals(solve(weight, 20, 31339), 100);
+    assertEquals(solve(weight, 20, 6695), 43);
   }
 }
