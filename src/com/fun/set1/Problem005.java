@@ -30,7 +30,7 @@ public class Problem005 {
         "fiery", "fuming", "galled", "hateful", "hot", "huffy", "ill-tempered", "incensed",
         "inflamed", "infuriated", "irascible", "ireful", "maddened", "nettled", "piqued",
         "provoked", "raging", "riled", "sore", "splenetic", "storming", "sulky",
-        "tumultous/tumultuous", "turbulent", "vexed", "wrathful" };
+        "tumultous", "tumultuous", "turbulent", "vexed", "wrathful" };
     assertEquals(countAngry(fullText, synonyms), 232);
   }
   
@@ -52,5 +52,11 @@ public class Problem005 {
   @Test
   public void test4() {
     assertEquals(countAngry("Sleepy Bird", new String[]{"angry"}), 0);
+  }
+  
+  @Test
+  public void test5() {
+    assertEquals(countAngry("Sleepy Bird gets angry if he is irritated.",
+        new String[]{"angry", "irritated"}), 2);
   }
 }
