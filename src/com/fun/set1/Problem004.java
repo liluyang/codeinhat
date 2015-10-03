@@ -12,7 +12,9 @@ import org.testng.annotations.Test;
 
 /**
  * Given image in a BufferedImage instance, calculate which color is most used?
- * To read a pixel's color, use method BufferedImage.getRGB(int x, int y)
+ * - to read a pixel's color, use method BufferedImage.getRGB(int x, int y)
+ * - to get image's width, use BufferedImage.getWidth()
+ * - to get image's height, use BufferedImage.getHeight()
  */
 public class Problem004 {
   public int solve(BufferedImage image) {
