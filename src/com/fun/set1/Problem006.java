@@ -45,7 +45,7 @@ public class Problem006 {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Choose a picture[0-3]: ");
+    System.out.print("Choose a picture[0-4]: ");
     String input = scanner.next();
     scanner.close();
     int choice = Integer.parseInt(input);
@@ -88,6 +88,8 @@ public class Problem006 {
       return new Mandelbrot();
     case 3:
       return new Mandelbrot2();
+    case 4:
+      return new Hyperbola();
     default:
       return new Solution();
     }
@@ -164,6 +166,20 @@ public class Problem006 {
       int green = getByte(255 * Math.pow((n - 80) / 800, 0.7));
       int blue = getByte(255 * Math.pow((n - 80) / 800, 0.5));
       return (red << 16) | (green << 8) | blue;
+    }
+  }
+  
+  private class Hyperbola extends Painter {
+    @Override
+    public int getRGB(int x, int y) {
+      int a = 256, b = 256;
+      int t = (int) (100 * 100 - (x - a) * (x - a) + (y - b) * (y - b) / 1.2);
+      if (t >= 0) {
+        int red = t % 0xff;
+        return (red << 16) | 0xdd66;
+      } else {
+        return 0xffffff;
+      }  
     }
   }
 
