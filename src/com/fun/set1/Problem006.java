@@ -179,7 +179,7 @@ public class Problem006 {
         return (red << 16) | 0xdd66;
       } else {
         return 0xffffff;
-      }  
+      }
     }
   }
 
