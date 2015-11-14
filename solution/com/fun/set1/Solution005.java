@@ -9,7 +9,7 @@ public class Solution005 extends Problem005 {
   public int countAngry(String fullText, String[] synonyms) {
     StringBuilder builder = new StringBuilder();
     for (String synonym : synonyms) {
-      builder.append("|" + synonym);
+      builder.append("|\\b" + synonym + "\\b");
     }
     Pattern pattern = Pattern.compile(builder.substring(1), Pattern.CASE_INSENSITIVE);
     Matcher matcher = pattern.matcher(fullText);

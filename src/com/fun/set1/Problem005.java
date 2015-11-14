@@ -2,6 +2,9 @@ package com.fun.set1;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.testng.annotations.Test;
 
 import com.fun.utils.FileUtils;
@@ -31,7 +34,7 @@ public class Problem005 {
         "inflamed", "infuriated", "irascible", "ireful", "maddened", "nettled", "piqued",
         "provoked", "raging", "riled", "sore", "splenetic", "storming", "sulky",
         "tumultous", "tumultuous", "turbulent", "vexed", "wrathful" };
-    assertEquals(countAngry(fullText, synonyms), 232);
+    assertEquals(countAngry(fullText, synonyms), 146);
   }
   
   @Test
