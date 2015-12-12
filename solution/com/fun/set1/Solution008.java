@@ -1,5 +1,7 @@
 package com.fun.set1;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,7 +23,7 @@ public class Solution008 extends Problem008 {
   public String findTelephoneNumber(String text) {
     HashMap<String, String> phonePatterns = new HashMap<String, String>();
     phonePatterns.put("(\\d{3})-(\\d{3})-(\\d{4})", "$1$2$3");
-    phonePatterns.put("(\\d{10})", "$1");
+    phonePatterns.put("\\D(\\d{10})\\D", "$1");
     phonePatterns.put("\\((\\d{3})\\)(\\d{3})-(\\d{4})", "$1$2$3");
     phonePatterns.put("(\\d{3}) (\\d{3}) (\\d{4})", "$1$2$3");
     phonePatterns.put("1-(\\d{3})-(\\d{3})-(\\d{4})", "$1$2$3");
@@ -38,5 +40,11 @@ public class Solution008 extends Problem008 {
   
   @Test
   public void test() {
+    assertEquals(findTelephoneNumber("15357236048"), null);
+  }
+  
+  @Test
+  public void testA() {
+    assertEquals(findTelephoneNumber("5357236048"), "5357236048");
   }
 }
