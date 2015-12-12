@@ -36,9 +36,7 @@ public class Problem010 {
 
   @Test
   public void test5() {
-    assertEquals(maxProfit(new int[] { 18, 15, 6, 11, 7, 15, 4, 7, 19, 17, 13, 8, 14, 16, 10, 18,
-        18, 10, 7, 18, 14, 7, 17, 19, 7, 10, 1, 9, 5, 18, 4, 16, 0, 19, 18, 5, 8, 8, 12, 16 }),
-        133);
+    assertEquals(maxProfit(new int[] { 1, 2, 1 }), 1);
   }
 
   @Test
