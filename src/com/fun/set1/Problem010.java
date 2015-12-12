@@ -10,20 +10,23 @@ public class Problem010 {
   }
 
   @Test
+  public void test0() {
+    assertEquals(maxProfit(new int[] {}), 0);
+  }
+
+  @Test
   public void test1() {
     assertEquals(maxProfit(new int[] { 1, 3, 5, 2, 4, 6, 3, 7, 8 }), 13);
   }
 
   @Test
   public void test2() {
-    assertEquals(maxProfit(new int[] { 17, 7, 19, 10, 8, 0, 4, 12, 0, 17 }), 41);
+    assertEquals(maxProfit(new int[] { 1 }), 0);
   }
 
   @Test
   public void test3() {
-    assertEquals(
-        maxProfit(new int[] { 3, 8, 14, 9, 12, 8, 6, 7, 5, 1, 18, 13, 6, 11, 14, 10, 4, 2, 6, 0 }),
-        44);
+    assertEquals(maxProfit(new int[] { 3, 2, 1 }), 0);
   }
 
   @Test
