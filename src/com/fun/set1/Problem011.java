@@ -4,6 +4,10 @@ import static org.testng.Assert.*;
 
 import org.testng.annotations.Test;
 
+/**
+ * Tree age can be calculated from annual ring. Given a 0/1 string, represents a line across the
+ * diameter of tree. 0 is dark area, 1 is light area.Write a program to count how old is the tree. 
+ */
 public class Problem011 {
   public int age(String treeLine) {
     return 0;
