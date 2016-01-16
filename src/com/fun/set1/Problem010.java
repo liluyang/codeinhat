@@ -4,6 +4,17 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+/**
+ * Maximize stock profit.
+ * 
+ * Given an array of stock price (integer), you can buy one share at a time. And you can have at
+ * most one share in hand. How to maximize your profit?
+ * 
+ * For example, {1, 2, 3, 1, 4}. Buy stock at time 0 (price = 1), sell it at time 2 (price = 3);
+ * then buy stock at time 3 (price = 1), and sell it at time 4 (price = 4). Maximum profit for 
+ * this case is 5.
+ *
+ */
 public class Problem010 {
   public int maxProfit(int[] price) {
     return 0;
@@ -29,7 +40,7 @@ public class Problem010 {
     assertEquals(maxProfit(new int[] { 3, 2, 1 }), 0);
   }
 
-  @Test(groups = {"debug"})
+  @Test
   public void test4() {
     assertEquals(maxProfit(new int[] { 1, 2 }), 1);
   }
