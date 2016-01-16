@@ -5,16 +5,15 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
 public class Solution012 extends Problem012 {
-  public String residual(int numerator, int denominator, int start, int end) {
+  public String residual(int a, int b, int start, int end) {
     StringBuilder builder = new StringBuilder();
-    numerator %= denominator;
-    for (int i = 0; i < end; i++) {
-      numerator *= 10;
-      int quotient = numerator / denominator;
-      if (i >= start - 1) {
+    for (int i = 0; i <= end; i++) {
+      int quotient = a / b;
+      int remainder = a % b;
+      if (i >= start) {
         builder.append(quotient);
       }
-      numerator %= denominator;
+      a = remainder * 10;
     }
     return builder.toString();
   }
