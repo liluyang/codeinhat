@@ -26,4 +26,13 @@ public class Problem014 {
   public void test2() {
     assertNull(decrypt("ABC", "BCD", "ABCD"), null);
   }
+  
+  @Test
+  public void test3() {
+    String encrypted = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    String decrypted = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
+    String input = "GSV JFRXP YILDM ULC QFNKH LEVI GSV OZAB WLT";
+    String expected = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+    assertEquals(decrypt(encrypted, decrypted, input), expected);
+  }
 }
