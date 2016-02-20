@@ -1,6 +1,7 @@
 package com.fun.set1;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNull;
 
 import org.testng.annotations.Test;
 
@@ -34,5 +35,10 @@ public class Problem014 {
     String input = "GSV JFRXP YILDM ULC QFNKH LEVI GSV OZAB WLT";
     String expected = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
     assertEquals(decrypt(encrypted, decrypted, input), expected);
+  }
+  
+  @Test
+  public void test4() {
+    assertEquals(decrypt("ABC", "XYZ", "A & C = ?"), "X & Z = ?");
   }
 }
