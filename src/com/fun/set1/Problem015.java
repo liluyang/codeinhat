@@ -1,6 +1,9 @@
 package com.fun.set1;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.testng.annotations.Test;
 
