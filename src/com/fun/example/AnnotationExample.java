@@ -1,5 +1,6 @@
 package com.fun.example;
 
+import java.io.DataInputStream;
 import java.lang.reflect.Method;
 
 public class AnnotationExample {
@@ -13,6 +14,9 @@ public class AnnotationExample {
     } catch (Exception e) {
       e.printStackTrace();
     }
+    
+    // Parse java.io.DataInputStream
+    example.parseDataInputStream();
   }
   
   private void parseClass() throws Exception {
@@ -55,5 +59,16 @@ public class AnnotationExample {
         }
       }
     }
+  }
+  
+  private void parseDataInputStream() {
+    Method[] methods = DataInputStream.class.getMethods();
+    int count = 0;
+    for (Method method : methods) {
+      if (method.isAnnotationPresent(Deprecated.class)) {
+        count++;
+      }
+    }
+    System.out.println("There are " + count + " overriden methods.");
   }
 }
