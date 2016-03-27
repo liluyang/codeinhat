@@ -34,7 +34,7 @@ public class Problem015 {
     assertEquals(lastElement(12345, 54321), 4820);
   }
   
-  @Test
+  //@Test
   public void test6() {
     assertEquals(lastElement(123456, 654321), 72440);
   }
@@ -42,5 +42,10 @@ public class Problem015 {
   //@Test
   public void test7() {
     assertEquals(lastElement(823456, 7654321), 683143);
+  }
+  
+  @Test
+  public void test8() {
+    assertEquals(lastElement(3, 2), 3);
   }
 }
