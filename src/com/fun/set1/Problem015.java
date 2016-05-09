@@ -4,6 +4,12 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+/**
+ * Josephus Problem: Given number M, N. M people sit in a circle, count them from 1,
+ * remove Nth people out. Continue to count and remove, until last person. 
+ * 
+ * Question: what is the last one's index at the beginning?
+ */
 public class Problem015 {
   public int lastElement(int M, int N) {
     return 0;

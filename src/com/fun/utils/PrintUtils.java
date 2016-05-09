@@ -13,4 +13,26 @@ public class PrintUtils {
     }
     System.out.println(builder.toString());
   }
+  
+  public final static void within100(String longString) {
+    int firstRow = 90;
+    int rowMax = 88;
+    int L = longString.length();
+    if (firstRow > L) {
+      System.out.println("\t\"" + longString + "\"");
+      return;
+    }
+    
+    int printed = firstRow;
+    System.out.println("\t\"" + longString.substring(0, firstRow) + "\"");
+    
+    while (printed < L) {
+      if (printed + rowMax <= L) {
+        System.out.println("+ \"" + longString.substring(printed, printed + rowMax) + "\"");
+      } else {
+        System.out.println("+ \"" + longString.substring(printed, L) + "\"");
+      }
+      printed += rowMax;
+    }
+  }
 }

@@ -4,6 +4,10 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
+/**
+ * Given two numbers in string, which can be very big (bigger than long's range). Return the
+ * multiplication of these two numbers in a string.
+ */
 public class Problem017 {
   public String multiply(String a, String b) {
     return "";

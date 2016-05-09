@@ -4,6 +4,10 @@ import static org.testng.Assert.*;
 
 import org.testng.annotations.Test;
 
+/**
+ * Given two numbers in string, which can be very big (bigger than long's range). Return the
+ * sum of these two numbers in a string.
+ */
 public class Problem016 {
   public String sum(String a, String b) {
     return "";
