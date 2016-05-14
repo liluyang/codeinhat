@@ -10,9 +10,11 @@ public class TreeNode {
   }
   
   public int height() {
-    int leftHeight = left == null ? 0 : left.height();
-    int rightHeight = right == null ? 0 : right.height();
-    return Math.max(leftHeight, rightHeight);
+    return height(this);
+  }
+  
+  private int height(TreeNode node) {
+    return node == null ? 0 : Math.max(height(node.left), height(node.right));
   }
   
   public boolean equals(TreeNode node) {
