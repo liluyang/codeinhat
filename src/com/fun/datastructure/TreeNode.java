@@ -1,11 +1,11 @@
 package com.fun.datastructure;
 
-public class BinaryTreeNode {
+public class TreeNode {
   public int value;
-  public BinaryTreeNode left;
-  public BinaryTreeNode right;
+  public TreeNode left;
+  public TreeNode right;
   
-  public BinaryTreeNode(int value) {
+  public TreeNode(int value) {
     this.value = value;
   }
   
@@ -15,11 +15,11 @@ public class BinaryTreeNode {
     return Math.max(leftHeight, rightHeight);
   }
   
-  public boolean equals(BinaryTreeNode node) {
+  public boolean equals(TreeNode node) {
     return equals(this, node);
   }
   
-  private boolean equals(BinaryTreeNode node1, BinaryTreeNode node2) {
+  private boolean equals(TreeNode node1, TreeNode node2) {
     if (node1 == null || node2 == null) return node1 == node2;
     return node1.value == node2.value 
         && equals(node1.left, node2.left) 
@@ -30,7 +30,7 @@ public class BinaryTreeNode {
     return preorder(this);
   }
   
-  private String preorder(BinaryTreeNode node) {
+  private String preorder(TreeNode node) {
     if (node == null) return "";
     return node.value + preorder(node.left) + preorder(node.right);
   }
@@ -39,7 +39,7 @@ public class BinaryTreeNode {
     return inorder(this);
   }
   
-  private String inorder(BinaryTreeNode node) {
+  private String inorder(TreeNode node) {
     if (node == null) return "";
     return inorder(node.left) + node.value + inorder(node.right);
   }
@@ -48,7 +48,7 @@ public class BinaryTreeNode {
     return postorder(this);
   }
   
-  private String postorder(BinaryTreeNode node) {
+  private String postorder(TreeNode node) {
     if (node == null) return "";
     return postorder(node.left) + postorder(node.right) + node.value;
   }

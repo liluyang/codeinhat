@@ -1,9 +1,9 @@
 package com.fun.datastructure;
 
 public class BinaryTree {
-  private BinaryTreeNode root;
+  private TreeNode root;
   
-  public BinaryTree(BinaryTreeNode root) {
+  public BinaryTree(TreeNode root) {
     this.root = root;
   }
   

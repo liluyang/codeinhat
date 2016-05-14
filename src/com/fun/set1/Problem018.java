@@ -5,7 +5,7 @@ import static org.testng.Assert.assertNull;
 
 import org.testng.annotations.Test;
 
-import com.fun.datastructure.BinaryTreeNode;
+import com.fun.datastructure.TreeNode;
 
 /**
  * Given a binary tree node, invert it. Means, exchange left node to right, and
@@ -24,13 +24,13 @@ import com.fun.datastructure.BinaryTreeNode;
  *    7  6 5  4
  */
 public class Problem018 {
-  public void invert(BinaryTreeNode node) {
+  public void invert(TreeNode node) {
     // TODO: invert the node.
   }
 
   @Test
   public void test1() {
-    BinaryTreeNode node = new BinaryTreeNode(1);
+    TreeNode node = new TreeNode(1);
     invert(node);
     assertEquals(node.value, 1);
     assertNull(node.left);
@@ -39,9 +39,9 @@ public class Problem018 {
 
   @Test
   public void test2() {
-    BinaryTreeNode node = new BinaryTreeNode(1);
-    node.left = new BinaryTreeNode(2);
-    node.right = new BinaryTreeNode(3);
+    TreeNode node = new TreeNode(1);
+    node.left = new TreeNode(2);
+    node.right = new TreeNode(3);
     invert(node);
     assertEquals(node.inorder(), "312");
     assertEquals(node.preorder(), "132");
@@ -49,13 +49,13 @@ public class Problem018 {
 
   @Test
   public void test3() {
-    BinaryTreeNode node = new BinaryTreeNode(1);
-    BinaryTreeNode node2 = new BinaryTreeNode(2);
-    node2.left = new BinaryTreeNode(4);
-    node2.right = new BinaryTreeNode(5);
-    BinaryTreeNode node3 = new BinaryTreeNode(3);
-    node3.left = new BinaryTreeNode(6);
-    node3.right = new BinaryTreeNode(7);
+    TreeNode node = new TreeNode(1);
+    TreeNode node2 = new TreeNode(2);
+    node2.left = new TreeNode(4);
+    node2.right = new TreeNode(5);
+    TreeNode node3 = new TreeNode(3);
+    node3.left = new TreeNode(6);
+    node3.right = new TreeNode(7);
     node.left = node2;
     node.right = node3;
 
@@ -66,7 +66,7 @@ public class Problem018 {
 
   @Test
   public void test4() {
-    BinaryTreeNode node = createNode(9, 1);
+    TreeNode node = createNode(9, 1);
     invert(node);
     assertEquals(node.inorder(),
         "10235111022255102151010201271019509101825410175081016631015507101"
@@ -141,8 +141,8 @@ public class Problem018 {
         + "2752626252552413026152352226052152064129259519518258517516128257515514256513512");
   }
 
-  private BinaryTreeNode createNode(int level, int value) {
-    BinaryTreeNode node = new BinaryTreeNode(value);
+  private TreeNode createNode(int level, int value) {
+    TreeNode node = new TreeNode(value);
     if (level > 0) {
       node.left = createNode(level - 1, value * 2);
       node.right = createNode(level - 1, value * 2 + 1);
@@ -152,7 +152,7 @@ public class Problem018 {
   
   @Test
   public void test5() {
-    BinaryTreeNode node = createNode2(9, 1);
+    TreeNode node = createNode2(9, 1);
     invert(node);
     assertEquals(node.inorder(),
         "918367214428857611525214284168336672134411459018036072014402393186372744148847189378756151"
@@ -172,8 +172,8 @@ public class Problem018 {
         + "96831968598422952529524984132801093364121401341");
   }
   
-  private BinaryTreeNode createNode2(int level, int value) {
-    BinaryTreeNode node = new BinaryTreeNode(value);
+  private TreeNode createNode2(int level, int value) {
+    TreeNode node = new TreeNode(value);
     if (level > 0) {
       if (value % 3 == 1) {
         node.left = createNode2(level - 1, value * 3 + 1);
