@@ -13,13 +13,8 @@ public class Solution022 extends Problem022 {
     int caught = pokemon.getCaught() + balls;
     int candy = pokemon.getCandy() + balls * 3;
 
-    // 2. Evolve max number of pokemons.
-    int evolved = Math.min(caught, candy / N);
-    caught -= evolved;
-    candy -= evolved * N;
-
-    // 3. Transfer and evolve as much as possible.
-    evolved += Math.min(caught, (caught + candy) / (N + 1));
+    // 2. Transfer and evolve as much as possible.
+    int evolved = Math.min(caught, (caught + candy) / (N + 1));
 
     return evolved * 500;
   }
