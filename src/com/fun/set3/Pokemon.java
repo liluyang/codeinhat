@@ -13,6 +13,22 @@ public class Pokemon {
     this.moveset = moveset;
   }
 
+  public int getCP() {
+    return cp;
+  }
+
+  public int getHP() {
+    return hp;
+  }
+
+  public PokemonType getType() {
+    return type;
+  }
+
+  public Moveset getMoveset() {
+    return moveset;
+  }
+
   public boolean defeat(Pokemon another) {
     // TODO(winston): implement this function
     return false;
