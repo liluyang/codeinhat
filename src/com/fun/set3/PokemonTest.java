@@ -37,6 +37,6 @@ public class PokemonTest {
   }
 
   private Pokemon createPokemon(PokemonType type, int cp, int hp, Moveset moveset) {
-    return new PokemonSolution(type, cp, hp, moveset);
+    return new Pokemon(type, cp, hp, moveset);
   }
 }
