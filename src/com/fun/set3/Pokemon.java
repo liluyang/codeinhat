@@ -1,10 +1,10 @@
 package com.fun.set3;
 
 public class Pokemon {
-  private PokemonType type;
-  private int cp;
-  private int hp;
-  private Moveset moveset;
+  protected PokemonType type;
+  protected int cp;
+  protected int hp;
+  protected Moveset moveset;
 
   public Pokemon(PokemonType type, int cp, int hp, Moveset moveset) {
     this.type = type;
@@ -30,7 +30,7 @@ public class Pokemon {
   }
 
   public boolean defeat(Pokemon another) {
-    // TODO(winston): implement this function
+    // TODO: implement this function
     return false;
   }
 }
