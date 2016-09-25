@@ -36,6 +36,21 @@ public class PokemonTest {
     assertFalse(arcanine1.defeat(arcanine2));
   }
 
+  @Test
+  public void test3() {
+    Move quick = new Move(PokemonType.Fire, 1.0, 10);
+    Move charged = new Move(PokemonType.Fire, 2.9, 55);
+    Moveset moveset = new Moveset(quick, charged);
+    Pokemon arcanine1 = createPokemon(PokemonType.Fire, 1800, 125, moveset);
+
+    Move quick2 = new Move(PokemonType.Fire, 1.5, 15);
+    Move charged2 = new Move(PokemonType.Fire, 4.1, 100);
+    Moveset moveset2 = new Moveset(quick2, charged2);
+    Pokemon arcanine2 = createPokemon(PokemonType.Fire, 1800, 128, moveset2);
+
+    assertFalse(arcanine1.defeat(arcanine2));
+  }
+
   private Pokemon createPokemon(PokemonType type, int cp, int hp, Moveset moveset) {
     return new Pokemon(type, cp, hp, moveset);
   }
