@@ -26,4 +26,10 @@ public class Problem023 {
     String[] data = new String[] { "Pidgey", "1", "210", "12", "50", "#" };
     assertEquals(walkNeed(data), 0);
   }
+
+  @Test
+  public void test4() {
+    String[] data = new String[] { "Legendary", "3", "210", "25", "100", "200", "#" };
+    assertEquals(walkNeed(data), 339);
+  }
 }
