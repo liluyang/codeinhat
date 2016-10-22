@@ -6,7 +6,7 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
 
 public class PokemonTest {
-  @Test
+  @Test(groups = "active")
   public void test1() {
     Move quick = new Move(PokemonType.Fire, 1.0, 10);
     Move charged = new Move(PokemonType.Fire, 4.0, 0);
