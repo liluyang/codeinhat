@@ -20,4 +20,10 @@ public class Problem023 {
     String[] data = new String[] { "Slowpoke", "3", "50", "50", "#" };
     assertEquals(walkNeed(data), 0);
   }
+
+  @Test
+  public void test3() {
+    String[] data = new String[] { "Pidgey", "1", "210", "12", "50", "#" };
+    assertEquals(walkNeed(data), 0);
+  }
 }
