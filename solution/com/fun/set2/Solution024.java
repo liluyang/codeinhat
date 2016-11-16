@@ -20,12 +20,11 @@ public class Solution024 extends Problem024 {
     int neighbor = 0;
     for (int x = -1; x < 2; x++) {
       for (int y = -1; y < 2; y++) {
-        if (x == 0 && y == 0)
-          continue;
         if (i + x >= 0 && i + x < M && j + y >= 0 && j + y < N)
           neighbor += states[i + x][j + y];
       }
     }
+    neighbor -= states[i][j];
     if (states[i][j] == 1) {
       return neighbor < 2 || neighbor > 3 ? 0 : 1;
     }
