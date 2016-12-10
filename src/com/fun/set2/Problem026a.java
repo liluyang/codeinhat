@@ -13,27 +13,27 @@ public class Problem026a {
   }
 
   @Test
-  public void test6() {
+  public void test1() {
     assertEquals(allStepsToOne(1), 0);
   }
 
   @Test
-  public void test7() {
+  public void test2() {
     assertEquals(allStepsToOne(2), 1);
   }
 
   @Test
-  public void test8() {
+  public void test3() {
     assertEquals(allStepsToOne(88), 2554);
   }
 
   @Test
-  public void test9() {
+  public void test4() {
     assertEquals(allStepsToOne(1023), 61307);
   }
 
   @Test
-  public void test10() {
+  public void test5() {
     assertEquals(allStepsToOne(12345), 1072042);
   }
 }
