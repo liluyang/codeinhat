@@ -40,4 +40,10 @@ public class Problem028 {
     int[] a = new int[] { 1, 2, 1, 2, 1 };
     assertEquals(numStream(a), new int[] { 1, 1 });
   }
+
+  @Test
+  public void test6() {
+    int[] a = new int[] { 1, 1, 1 };
+    assertEquals(numStream(a), new int[] { 1, 3 });
+  }
 }
