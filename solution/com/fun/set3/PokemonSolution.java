@@ -1,5 +1,9 @@
 package com.fun.set3;
 
+import com.fun.set3.pokemon.Moveset;
+import com.fun.set3.pokemon.Pokemon;
+import com.fun.set3.pokemon.PokemonType;
+
 public class PokemonSolution extends Pokemon {
   public PokemonSolution(PokemonType type, int cp, int hp, Moveset moveset) {
     super(type, cp, hp, moveset);

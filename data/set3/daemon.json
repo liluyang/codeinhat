@@ -1,0 +1,57 @@
+{
+  "Daemons": [
+     {
+        "id":1,
+        "name":"Ameno Uzume",
+        "rarity":1,
+        "type":"divina",
+	      "description":"A goddess with extraordinary artistic talents. She is known for dancing in front of the cave that the sun goddess Amaterasu hid in, depriving the world of light.",
+        "stats": {
+	        "minAttack":660,
+	        "maxAttack":1910,
+	        "limAttack":2106,
+	        "minDefense":590,
+	        "maxDefense":1690,
+	        "limDefense":1863,
+	        "conquest":3600,
+	        "spirit":6
+	      },
+        "skill": {
+          "label":"War Dance",
+          "skillType":"increase",
+          "target":"self",
+          "targetType":"divina",
+          "impact":"slightly",
+          "mainQuote":"Coo-ey! Won't you come over here and dance with me?",
+          "skillQuote":"Look at me shimmy!"
+        }
+     },
+
+     {
+        "id":2,
+        "name":"TBD",
+        "rarity":2,
+        "type":"Unknown",
+        "description":"TBD",
+        "stats": {
+          "minAttack":660,
+          "maxAttack":1910,
+          "limAttack":2106,
+          "minDefense":590,
+          "maxDefense":1690,
+          "limDefense":1863,
+          "conquest":3600,
+          "spirit":6
+        },
+        "skill": {
+          "label":"War Dance",
+          "skillType":"increase",
+          "target":"self",
+          "targetType":"divina",
+          "impact":"slightly",
+          "mainQuote":"Coo-ey! Won't you come over here and dance with me?",
+          "skillQuote":"Look at me shimmy!"
+        }
+     }
+  ]
+}

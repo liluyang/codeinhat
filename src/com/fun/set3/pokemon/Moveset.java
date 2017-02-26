@@ -1,4 +1,4 @@
-package com.fun.set3;
+package com.fun.set3.pokemon;
 
 public class Moveset {
   private Move quick;

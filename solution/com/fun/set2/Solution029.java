@@ -25,5 +25,6 @@ public class Solution029 extends Problem029 {
 
   @Test
   public void test() {
+
   }
 }

@@ -1,4 +1,4 @@
-package com.fun.set3;
+package com.fun.set3.pokemon;
 
 public class TypeUtils {
   public static final double WEAK = 0.8;

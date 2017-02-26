@@ -1,4 +1,4 @@
-package com.fun.set3;
+package com.fun.set3.pokemon;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
